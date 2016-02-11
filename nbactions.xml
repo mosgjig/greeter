@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-docker</actionName>
+            <displayName>docker</displayName>
+            <goals>
+                <goal>package</goal>
+                <goal>docker:build</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-local</actionName>
+            <displayName>local</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <user.host.ip>localhost</user.host.ip>
+            </properties>
+        </action>
+    </actions>
